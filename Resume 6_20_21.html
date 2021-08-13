@@ -39,9 +39,9 @@
 <li>Reading</li>
 <li>Travel to French and Spanish speaking countries</li>
 
-<script type = "text/javascript">  const userAction = async () => {
-  const response = await fetch('https://h2r98egvbi.execute-api.us-east-2.amazonaws.com/Prod/Visitor_Count/');
+<script type = "text/javascript">  
+  const response = fetch('https://h2r98egvbi.execute-api.us-east-2.amazonaws.com/Prod/Visitor_Count/');
   const myJson = await response.json(); //extract JSON from the http response
   console.log(JSON.stringify(myJson));
-  } </script>
+  </script>
 
