@@ -39,10 +39,14 @@
 <li>Reading</li>
 <li>Travel to French and Spanish speaking countries</li>
 
-<script type = "text/javascript">  
-  var apiUrl = 'https://h2r98egvbi.execute-api.us-east-2.amazonaws.com/Prod/Visitor_Count/';
-  fetch(apiUrl)
-    .then(response => response.json();
-    .then(data => console.log(data));
+<script type = "text/javascript">
+  var apiUrl = "https://h2r98egvbi.execute-api.us-east-2.amazonaws.com/Prod/Visitor_Count/";
+   fetch(apiUrl)
+    .then(response => response.json())
+    .then(data =>{
+	var count = document.getElementById('Visitor_Count');
+	count.innerHTML = data.Visitor_Count;
+	console.log(data)});
+  	
   </script>
 
