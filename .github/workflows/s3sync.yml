@@ -35,4 +35,4 @@ jobs:
         
       - name: Copy files to the test website with the AWS CLI
         run: |
-          aws s3 sync . s3://workflowbucket1
+          aws s3 sync . s3://antoniofloresresume
