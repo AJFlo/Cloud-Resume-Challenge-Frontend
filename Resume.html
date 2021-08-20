@@ -1,0 +1,61 @@
+
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<p>Antonio Flores</p>
+<p>Email: <u>antoniojflores0@gmail.com</u>  </p>
+<p><strong>Education</strong></p>
+<p><strong>Georgia Institute of Technology</strong></p>
+<p>Online M.S. Computer Science, Starting Fall 2021</p>
+
+<p><strong>University of Minnesota - Twin Cities</strong></p>
+<p>B. S. Mathematics - May 2021, GPA: 3.5 </p>
+<p>College of Science and Engineering, National Merit Gold Scholarship Recipient</p>
+<p>Relevant Coursework: Differential Equations, Linear Algebra, Graduate-level Statistics, Project Management</p>
+
+<p><strong>Bethel University</strong></p>
+<p>Full-Time PSEO - 2017-2018, GPA: 3.9 </p>
+<p>Relevant Coursework: Multivariable Calculus, Computing</p>
+
+<p><strong>AWS Certified Cloud Practitioner</strong></p>
+<p>Received August 2021</p>
+<p>Validation Number: XB4S0XLJJMB41638</p>
+
+<p><strong>Employment History</strong></p>
+<p><strong>IT Intern - OnlineApplication.ie					  September - December 2020</strong></p>
+<li>Selected software for projects, comparing their cost and function </li>
+<li>Built a chatbot using HubSpot for the company's social media using the software</li>
+<li>Wrote articles on digitization of real estate transactions for company blog</li>
+<p><strong>PSAT & SAT Teacher - Varsity Tutors				  2019-2020 </strong></p>
+<li>Designed and Taught online PSAT courses</li>
+<li>Tutored students one-on-one online and in person for the SAT, PSAT, and ACT</li>
+<p><strong>High School Tutor - Independent					  2015-2018 </strong></p>
+<li>Tutored several students in ACT test prep and for high school English and math courses</li>
+
+<p><strong>Skills</strong></p>
+<p><strong>Programming Languages: </strong>Intermediate C++, Basic SQL, Basic Python</p>
+<p><strong>Software:</strong> CAD, 3D Printing, Microsoft Office (Including Excel)</p>
+<p><strong>Languages: </strong>English: Native, French: Certified Fluent, Spanish: Conversational, Portuguese: Intermediate</p>
+
+<p><strong>Extracurriculars</strong></p>
+<li><strong>Hu Bioengineering Lab Volunteer: </strong>Spring 2019</li>
+
+<p><strong>Interests</strong></p>
+<li>Lifting weights</li>
+<li>Reading</li>
+<li>Travel to French and Spanish speaking countries</li>
+
+<a href="https://dev.to/ajflo/my-cloud-resume-challenge-journey-520o"> Here is a description of my cloud journey so far.</a>
+
+<p> The number of visitors to this website is </p>
+<p id ="Visitor_Count"></p>
+
+<script type = "text/javascript">
+  var apiUrl = "https://h2r98egvbi.execute-api.us-east-2.amazonaws.com/Prod/Visitor_Count/";
+   fetch(apiUrl)
+    .then(response => response.json())
+    .then(data =>{
+	var count = document.getElementById('Visitor_Count');
+	count.innerHTML = data.Visitor_Count;
+	console.log(data)});
+  	
+  </script>
+
